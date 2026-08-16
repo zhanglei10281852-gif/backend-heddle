@@ -1,0 +1,9 @@
+# The 2/2 twill tie-up over a point draw, which turns the diagonal back on itself.
+# The threading repeats over six ends rather than four, and it does not read the same
+# from either selvedge.
+name Herringbone
+shafts 4
+treadles 4
+threading point 12
+tieup 12 23 34 14
+treadling straight 8

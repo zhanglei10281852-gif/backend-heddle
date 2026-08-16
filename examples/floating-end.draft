@@ -1,0 +1,9 @@
+# Shaft one is tied to every treadle, so the ends on shaft one are raised over every
+# pick and are never woven in. The cloth reads as sound in every other way, which is
+# why the quality report looks for this rather than leaving it to the eye.
+name Floating End
+shafts 4
+treadles 4
+threading straight 8
+tieup 12 13 14 1
+treadling straight 8

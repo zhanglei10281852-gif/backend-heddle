@@ -1,0 +1,9 @@
+# A five shaft sateen: one shaft up per pick, stepped by two.
+# Two is a step a five shaft satin can use because it shares no factor with five and is
+# neither one nor four.
+name Sateen 5
+shafts 5
+treadles 5
+threading straight 10
+tieup 1 3 5 2 4
+treadling straight 10

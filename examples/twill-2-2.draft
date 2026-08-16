@@ -1,0 +1,7 @@
+# A 2/2 twill on a four shaft straight draw, treadled the way it is threaded.
+name 2/2 Twill
+shafts 4
+treadles 4
+threading straight 8
+tieup 12 23 34 14
+treadling tromp

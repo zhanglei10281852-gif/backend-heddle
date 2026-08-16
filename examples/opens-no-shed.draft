@@ -1,0 +1,8 @@
+# A tie-up in which the first treadle lifts every shaft. There is then no gap for the
+# shuttle to pass through, so this file is refused rather than woven.
+name Not A Draft
+shafts 4
+treadles 4
+threading straight 8
+tieup 1234 23 34 14
+treadling straight 8

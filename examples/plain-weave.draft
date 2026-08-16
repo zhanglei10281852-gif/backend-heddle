@@ -1,0 +1,7 @@
+# Plain weave on two shafts: the ends alternate and so do the picks.
+name Plain Weave
+shafts 2
+treadles 2
+threading straight 8
+tieup 1 2
+treadling straight 8
