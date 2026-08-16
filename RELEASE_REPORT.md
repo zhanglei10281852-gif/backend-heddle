@@ -10,7 +10,7 @@ Effective lines are counted after removing blank lines and lines that are only c
 
 | part                              | effective lines |
 | --------------------------------- | --------------- |
-| production Go (`cmd`, `internal`) | 2639            |
+| production Go (`cmd`, `internal`) | 2635            |
 | tests (`*_test.go`)               | 2563            |
 
 Per file:
@@ -26,7 +26,7 @@ Per file:
 | `internal/pattern/pattern.go` | 397        | 455   |
 | `internal/quality/quality.go` | 198        | 210   |
 | `internal/report/report.go`   | 137        | 111   |
-| `internal/shafts/shafts.go`   | 223        | 309   |
+| `internal/shafts/shafts.go`   | 219        | 309   |
 
 ## Toolchain checks
 

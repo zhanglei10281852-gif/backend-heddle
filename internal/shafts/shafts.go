@@ -213,6 +213,10 @@ func checkLoom(shafts int) error {
 // shafts one and two; and full stops separate the shafts when any of them needs two digits,
 // so 1.10.12 is shafts one, ten and twelve. A single dash is refused rather than read as the
 // empty set, because a treadle that lifts nothing opens no shed.
+//
+// Whether the shafts are on the loom is left to Validate, which is the one place that decides
+// it: this reader is not the only way a set gets made, and a set that names a shaft the loom
+// has not got must be refused however it was built.
 func Parse(text string, shafts int) (Set, error) {
 	if err := checkLoom(shafts); err != nil {
 		return 0, err
@@ -241,10 +245,6 @@ func Parse(text string, shafts int) (Set, error) {
 		}
 		if shaft < 1 {
 			return 0, fmt.Errorf("shaft set %q: shaft %d is not a shaft", trimmed, shaft)
-		}
-		if shaft > shafts {
-			return 0, fmt.Errorf("shaft set %q: shaft %d is not one of the %d shafts of the loom",
-				trimmed, shaft, shafts)
 		}
 		if out.Has(shaft) {
 			return 0, fmt.Errorf("shaft set %q: shaft %d is named twice", trimmed, shaft)
